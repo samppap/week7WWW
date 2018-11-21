@@ -1,7 +1,7 @@
 FROM node:10
 WORKDIR /part5
-COPY package.json /part5
+COPY package.json ./
 RUN npm install
 COPY . /part5
-CMD ["npm", "start"]
 EXPOSE 3000
+CMD ["npm", "start"]
